@@ -1,0 +1,130 @@
+#logo-container {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width:125px;
+}
+
+.logo-enter{
+	opacity: 0.5;
+	transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp.ng-enter {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.myHR {
+    margin-top: 0px;
+    margin-bottom: 2px;
+    border-color: #222222;
+    width: 75%;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+}
+
+.logo:hover{
+	animation: spin 0.3s linear 1;
+	-moz-animation: spin 0.3s linear 1;
+	-webkit-animation: spin 0.3s linear 1;
+}
+
+}
+body{
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	color:#414042;
+	font-weight:500;
+}
+
+h4{
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 500;
+	font-size:18px;
+
+	margin-top:10px;
+	margin-bottom:10px;
+
+}
+
+.devicons{
+	width:355px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.devicons img{
+	width:48px;
+	height:48px;
+	filter:grayscale(30%);
+}
+
+#panel{
+	text-align:center;
+	width:535px;
+	padding:15px;
+	margin-top:10%;
+	margin-left:auto;
+	margin-right:auto;
+}
+@-moz-keyframes spin { 
+	0%,100%{
+		-moz-transform: rotateY(0deg);
+	}
+	50%{
+		-moz-transform: rotateY(90deg);
+	}
+ 
+ }
+@-webkit-keyframes spin { 
+	0%,100%{
+		-webkit-transform: rotateY(0deg);
+	}
+	50%{
+		-webkit-transform: rotateY(90deg);
+	}
+ }
+ 
+
+@keyframes spin {
+	0%,100%{
+		transform: rotateY(0deg);
+	}
+	50%{
+		transform: rotateY(90deg);
+	}
+}
+

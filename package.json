@@ -1,0 +1,24 @@
+{
+  "name": "elarbee.io",
+  "version": "2.0.0",
+  "description": "Personal website of Alex Elarbee",
+  "main": "elarbee.io.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server ./app -a localhost -p 8000 -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elarbee/elarbee.io.git"
+  },
+  "author": "Alex Elarbee <aelarbee@gmail.com> (elarbee.io)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elarbee/elarbee.io/issues"
+  },
+  "homepage": "https://github.com/elarbee/elarbee.io#readme",
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "http-server": "^0.9.0"
+  }
+}

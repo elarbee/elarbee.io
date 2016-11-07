@@ -1,0 +1,4 @@
+node_modules/
+scripts/
+start.bat
+app/bower_components
