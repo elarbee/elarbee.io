@@ -20,14 +20,16 @@
 	<link rel="stylesheet" href="bower_components/devicon/devicon.css">
 	<link rel="stylesheet" href="css/elarbee.io.css">
 
+	<link rel="stylesheet" href="css/animations.css">
+
 </head>
-<body>
+<body ng-controller="elarbeeCtrl">
 
 	<div id="panel">
-		<div ng-controller="logoController" id="logo-container">
-			<img src='img/isometric-logo.svg' class="fadeInUp logo">
+		<div id="logo-container" class="fadeInUp" ng-mouseenter="spin = true" ng-mouseleave="spin = false">
+			<img src='img/isometric-logo.svg' ng-class="{'spin-animation':spin}">
 		</div>
-		<div class="content">
+		<div class="content contentFadeIn">
 			<h4 id="intro1">Hi, I'm Alex</h4>
 			<h4 id="intro2">I'm a web developer</h4>
 			<hr class="myHR">
