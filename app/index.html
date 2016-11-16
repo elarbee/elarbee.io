@@ -1,77 +1,56 @@
 <!DOCTYPE html>
 <html ng-app="elarbee.io">
-<head>
-<title>elarbee.io</title>
-	<!-- Angular -->
-	<script src="bower_components/jquery//dist/jquery.min.js"></script>
-	<script src="bower_components/angular/angular.min.js"></script>
-	<script src="bower_components/angular-animate/angular-animate.min.js"></script>
-	<script src="bower_components/angular-resource/angular-resource.min.js"></script>
-	<script src="elarbee.io.js"></script>
+	<head>
+		<title>elarbee.io</title>
+		<!-- Angular -->
+		<script src="bower_components/jquery//dist/jquery.min.js"></script>
+		<script src="bower_components/angular/angular.min.js"></script>
+		<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+		<script src="bower_components/angular-resource/angular-resource.min.js"></script>
+		<script src="elarbee.io.js"></script>
 
-	<script src="core/icon/icon.module.js"></script>
-	<script src="core/icon/icon.service.js"></script>
+		<script src="core/icon/icon.module.js"></script>
+		<script src="core/icon/icon.service.js"></script>
 
-        <script src="icon-list/icon-list.module.js"></script>
-	<script src="icon-list/icon-list.component.js"></script>
+		<script src="icon-list/icon-list.module.js"></script>
+		<script src="icon-list/icon-list.component.js"></script>
 
-	<script src="logo/logo.controller.js"></script>
-	
-	<link rel="stylesheet" href="bower_components/devicon/devicon.css">
-	<link rel="stylesheet" href="css/elarbee.io.css">
+		<script src="logo/logo.controller.js"></script>
 
-	<link rel="stylesheet" href="css/animations.css">
+		<link rel="stylesheet" href="bower_components/devicon/devicon.css">
+		<link rel="stylesheet" href="css/elarbee.io.css">
 
-</head>
-<body ng-controller="elarbeeCtrl">
+		<link rel="stylesheet" href="css/animations.css">
 
-	<div id="panel">
-		<div id="logo-container" class="fadeInUp" ng-mouseenter="spin = true" ng-mouseleave="spin = false">
-			<img src='img/isometric-logo.svg' ng-class="{'spin-animation':spin}">
+	</head>
+	<body ng-controller="elarbeeCtrl">
+
+		<div id="panel">
+			<div id="logo-container" class="fadeInUp" ng-mouseenter="spin = true" ng-mouseleave="spin = false">
+				<img src='img/isometric-logo.svg' ng-class="{'spin-animation':spin}">
+			</div>
+			<div class="content contentFadeIn">
+				<h4 id="intro1">Hi, I'm Alex</h4>
+				<h4 id="intro2">I'm a web developer</h4>
+				<hr class="myHR">
+				<hr class="myHR">
+				<h4 id="intro3">I use these technologies</h4>
+
+				<icon-list></icon-list>
+
+				<small><i>(and a lot more that I can't fit here.)</i></small>
+				<br>
+				<br>
+				<hr class="myHR">
+				<hr class="myHR">
+				<h4 id="intro4">You can check out my resume <a href="resume.pdf">here</a></h4>
+				<h4 id="intro4"> and you can find me at one of the links below.</h4>
+
+				<ul class="icons">
+				</ul>
+
+
+			</div>
 		</div>
-		<div class="content contentFadeIn">
-			<h4 id="intro1">Hi, I'm Alex</h4>
-			<h4 id="intro2">I'm a web developer</h4>
-			<hr class="myHR">
-			<hr class="myHR">
-			<h4 id="intro3">I use these technologies</h4>
-		<!--
-		<div class="devicons">	
-			<i class="devicon-android-plain-wordmark grow" data-toggle="tooltip" data-placement="top" title="Android Development"></i>
-			<i class="devicon-apache-plain-wordmark grow" data-toggle="tooltip" data-placement="top" title="Apache Server"></i>
-			<img src="bower_components\devicon\icons\angularjs\angularjs-original.svg" width=48 height=48>
-			<i class="devicon-bootstrap-plain-wordmark grow" data-toggle="tooltip" data-placement="top" title="BootStrap"></i>
-			<i class="devicon-csharp-plain grow" data-toggle="tooltip" data-placement="top" title="C# Development"></i>
-			<i class="devicon-css3-plain-wordmark grow" data-toggle="tooltip" data-placement="top" title="CSS3"></i>  	
-		        <i class="devicon-git-plain-wordmark grow" data-toggle="tooltip" data-placement="top" title="Git"></i>  
-		        <i class="devicon-html5-plain-wordmark grow" data-toggle="tooltip" data-placement="top" title="HTML5"></i> 
-		        <i class="devicon-illustrator-plain grow" data-toggle="tooltip" data-placement="top" title="Adobe Illustrator"></i>
-			<i class="devicon-photoshop-plain grow" data-toggle="tooltip" data-placement="top" title="Adobe Photoshop"></i>
-			<i class="devicon-php-plain grow" data-toggle="tooltip" data-placement="top" title="PHP"></i>
-			<i class="devicon-java-plain-wordmark grow" data-toggle="tooltip" data-placement="top" title="Java"></i>
-			<i class="devicon-javascript-plain grow" data-toggle="tooltip" data-placement="top" title="JavaScript"></i>  
-			<i class="devicon-jquery-plain-wordmark grow" data-toggle="tooltip" data-placement="top" title="jQuery"></i>  
-			<i class="devicon-linux-plain grow" data-toggle="tooltip" data-placement="top" title="Linux"></i>  
-			<i class="devicon-mysql-plain-wordmark grow" data-toggle="tooltip" data-placement="top"  title="MySQL"></i>  
-			<i class="devicon-python-plain-wordmark grow" data-toggle="tooltip" data-placement="top"  title="Python"></i>  
-			<i class="devicon-vim-plain grow" data-toggle="tooltip" data-placement="top"  title="Vim"></i>  
-		</div>
-		-->
-		<icon-list></icon-list>
-
-			<small><i>(and a lot more that I can't fit here.)</i></small>
-			<br>
-			<br>
-			<hr class="myHR">
-			<hr class="myHR">
-			<h4 id="intro4">You can check out my resume <a href="resume.pdf">here</a></h4>
-			<h4 id="intro4"> and you can find me at one of the links below.</h4>
-
-			<ul class="icons">
-			</ul>
-
-
-		</div>
-	</div>
-</body>
+	</body>
 </html>
