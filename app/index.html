@@ -17,6 +17,8 @@
 
 		<script src="logo/logo.controller.js"></script>
 
+		
+		<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
 		<link rel="stylesheet" href="bower_components/devicon/devicon.css">
 		<link rel="stylesheet" href="css/elarbee.io.css">
 
@@ -30,11 +32,11 @@
 				<img src='img/isometric-logo.svg' ng-class="{'spin-animation':spin}">
 			</div>
 			<div class="content contentFadeIn">
-				<h4 id="intro1">Hi, I'm Alex</h4>
-				<h4 id="intro2">I'm a web developer</h4>
+				<h4>Hi, I'm Alex</h4>
+				<h4>I'm a web developer</h4>
 				<hr class="myHR">
 				<hr class="myHR">
-				<h4 id="intro3">I use these technologies</h4>
+				<h4>I use these technologies</h4>
 
 				<icon-list></icon-list>
 
@@ -43,11 +45,11 @@
 				<br>
 				<hr class="myHR">
 				<hr class="myHR">
-				<h4 id="intro4">You can check out my resume <a href="resume.pdf">here</a></h4>
-				<h4 id="intro4"> and you can find me at one of the links below.</h4>
+				<h4>You can check out my resume <a href="resume.pdf">here</a></h4>
+				<h4> and you can find me at one of the links below.</h4>
 
-				<ul class="icons">
-				</ul>
+				<div ng-include="'html/contact.template.html'" class="icons">
+				</div>
 
 
 			</div>
