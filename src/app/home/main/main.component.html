@@ -1,0 +1,18 @@
+<div class="main-page" fxLayout="row" fxLayoutAlign="center center">
+  <particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height"></particles>
+  <div class="panel"  fxLayout="column" fxLayoutAlign="center center" [@panelFade]="panelFade">
+    <app-logo></app-logo>
+    <p>Hi, I'm Alex</p>
+    <p>I'm a full stack web developer.</p>
+    <div class="ahoy-line" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="6px">
+      <p>I'm building </p>
+      <img class="ahoy-logo" src="../../../assets/images/ahoy_logotype_white.png">
+      <p> at <a href="https://www.piratelabs.co">Pirate Labs</a> in Atlanta</p>
+    </div>
+    <p>I use these technologies to make cool things.</p>
+    <app-tech-icons></app-tech-icons>
+    <i><p class="disclaimer">(and a lot more that I can't fit here.) </p></i>
+    <p>You can find me at one of the links below.<p>
+    <app-social-links></app-social-links>
+  </div>
+</div>
