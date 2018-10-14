@@ -1,0 +1,13 @@
+@import url('https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css');
+.tech-icons {
+  margin: 12px 0;
+  max-width: 400px;
+  img{}
+  .img-wrapper {
+    padding: 6px 6px;
+    padding-bottom: 2px;
+    &:hover {
+      background-color: rgba(255,255,255,0.1);
+    }
+  }
+}

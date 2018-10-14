@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160px" height="167px" viewBox="0 0 160 167" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Untitled</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="isometric-logo" fill-rule="nonzero">
+            <polygon id="Shape" fill="#6D6E71" points="160 120.1 160 138.6 112 166.3 112 147.8"></polygon>
+            <polygon id="Shape" fill="#6D6E71" points="160 27.7 160 46.2 144 55.4 144 37"></polygon>
+            <polygon id="Shape" fill="#A7A9AC" points="160 27.7 144 37 112 18.5 80 37 48 18.5 16 37 0 27.7 48 0 80 18.5 112 0"></polygon>
+            <polygon id="Shape" fill="#A7A9AC" points="160 120.1 112 147.8 80 129.3 96 120.1 112 129.3 144 110.8"></polygon>
+            <polygon id="Shape" fill="#6D6E71" points="144 73.9 144 92.4 128 101.6 128 83.1"></polygon>
+            <polygon id="Shape" fill="#414042" points="144 37 144 55.4 112 37 112 18.5"></polygon>
+            <polygon id="Shape" fill="#A7A9AC" points="144 73.9 128 83.1 112 73.9 96 83.1 96 64.7 112 55.4"></polygon>
+            <polygon id="Shape" fill="#414042" points="128 83.1 128 101.6 112 92.4 112 73.9"></polygon>
+            <polygon id="Shape" fill="#414042" points="112 147.8 112 166.3 64 138.6 64 101.6 48 92.4 48 73.9 64 83.1 64 46.2 48 37 48 18.5 80 37 80 129.3"></polygon>
+            <polygon id="Shape" fill="#6D6E71" points="112 73.9 112 92.4 96 101.6 96 120.1 80 129.3 80 37 112 18.5 112 37 96 46.2 96 83.1"></polygon>
+            <polygon id="Shape" fill="#A7A9AC" points="64 64.7 64 83.1 48 73.9 32 83.1 32 64.7 48 55.4"></polygon>
+            <polygon id="Shape" fill="#6D6E71" points="48 73.9 48 92.4 32 101.6 32 138.6 16 147.8 16 37 48 18.5 48 37 32 46.2 32 83.1"></polygon>
+            <polygon id="Shape" fill="#414042" points="16 147.8 0 138.6 0 27.7 16 37"></polygon>
+        </g>
+    </g>
+</svg>

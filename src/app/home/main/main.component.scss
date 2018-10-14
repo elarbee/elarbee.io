@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+
+html, body {
+  background-color: #1e1e1e;
+}
+.main-page {
+  background-color: #1e1e1e;
+  height: 100%;
+  width: 100%;
+  p {
+    font-family: 'Roboto',sans-serif;
+    color: #eee;
+    font-size: larger;
+    font-weight: lighter;
+    margin: 6px 0;
+    text-align: center;
+  }
+  a {
+    font-family: 'Roboto',sans-serif;
+    color: #eee;
+    font-weight: lighter;
+    margin: 6px 0;
+    text-align: center;
+    text-decoration: none;
+  }
+  .disclaimer{
+    font-size: large;
+  }
+  .ahoy-logo {
+    width: 60px;
+  }
+  .panel {
+    z-index: 1;
+    padding: 15px;
+    //background-color: rgba(80, 80, 80, 0.0);
+    //border: 1px #484848 solid;
+    border-radius: 18px;
+  }
+}
