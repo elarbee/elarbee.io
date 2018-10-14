@@ -1,3 +1,39 @@
-img {
+svg {
+  width: 125px;
+}
+
+$delay_1: 1s;
+$delay_2: 3s;
+$dash_anim_duration: 6s;
+$dash_fade_duration: 1s;
+$fadeIn_duration: 1s;
+
+.border {
   opacity: 1;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000px;
+  animation: dash $dash_anim_duration linear $delay_1 forwards, fadeOut $dash_fade_duration linear $delay_2 forwards;
+}
+
+#icon polygon {
+  opacity: 0.0;
+  animation: fadeIn $fadeIn_duration linear $delay_2 forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0.0;
+  }
 }
