@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "invalidate": "aws cloudfront create-invalidation --distribution-id $ELARBEE_CLOUDFRONT_DISTRIBUTION --paths /*",
-    "sync": "aws s3 sync dist/elarbee s3://elarbee.io.2.0 --acl public-read --profile alex";
+    "sync": "aws s3 sync dist/elarbee s3://elarbee.io.2.0 --acl public-read --profile alex",
     "deploy": "npm run build; npm run sync",
     "deploy:invalidate": "npm run build; npm run sync; npm run invalidate"
   },
