@@ -14,6 +14,10 @@ html, body {
     font-weight: lighter;
     margin: 6px 0;
     text-align: center;
+    @media screen and (max-width: 599px) {
+      font-size: large;
+      white-space: nowrap;
+    }
   }
   a {
     font-family: 'Roboto',sans-serif;
@@ -25,13 +29,17 @@ html, body {
   }
   .disclaimer{
     font-size: large;
+    @media screen and (max-width: 599px) {
+      font-size: medium;
+      white-space: nowrap;
+    }
   }
   .ahoy-logo {
     width: 60px;
   }
   .panel {
     z-index: 1;
-    padding: 15px;
+    padding: 25px;
     //background-color: rgba(80, 80, 80, 0.0);
     //border: 1px #484848 solid;
     border-radius: 18px;
