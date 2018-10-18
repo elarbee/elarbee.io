@@ -4,9 +4,11 @@
     <app-logo></app-logo>
     <p>Hi, I'm Alex</p>
     <p>I'm a full stack web developer.</p>
-    <div class="ahoy-line" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="6px">
-      <p>I'm building </p>
-      <img class="ahoy-logo" src="../../../assets/images/ahoy_logotype_white.png">
+    <div class="ahoy-line" fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="center center" fxLayoutGap="6px" fxLayoutGap.lt-sm="0px">
+      <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="6px">
+        <p>I'm building </p>
+        <img class="ahoy-logo" src="../../../assets/images/ahoy_logotype_white.png">
+      </div>
       <p> at <a href="https://www.piratelabs.co">Pirate Labs</a> in Atlanta</p>
     </div>
     <p>I use these technologies to make cool things.</p>
@@ -15,4 +17,7 @@
     <p>You can find me at one of the links below.<p>
     <app-social-links></app-social-links>
   </div>
+</div>
+<div class="build-stamp" fxLayout="row" fxLayoutAlign="center end">
+  <p>elarbee.io v{{version}} Last build {{build_date}}</p>
 </div>
