@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import { PARTICLE_CONFIG } from './particle-config';
 import {animate, state, style, transition, trigger} from '@angular/animations';
-
+import { environment } from '../../../environments/environment';
 @Component({
     selector: 'app-main',
     templateUrl: './main.component.html',
@@ -26,6 +26,9 @@ export class MainComponent implements OnInit {
     height: number = 100;
 
     panelFade = 'unloaded';
+
+    version = environment.version;
+    build_date = environment.build_date;
 
     constructor() {
     }

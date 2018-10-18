@@ -37,3 +37,14 @@ html, body {
     border-radius: 18px;
   }
 }
+
+.build-stamp {
+  position: fixed;
+  bottom: 0;
+  p {
+    opacity: 0.1;
+    font-size: 8px;
+    font-family: 'Roboto',sans-serif;
+    color: #eee;
+  }
+}

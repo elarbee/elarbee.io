@@ -1,14 +1,18 @@
 {
   "name": "elarbee",
-  "version": "0.0.0",
+  "version": "2.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build-prod": "npm version patch && node ./replace.build.js && ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "npm run build; aws s3 sync dist/elarbee s3://elarbee.io.2.0 --profile alex"
+    "invalidate": "aws cloudfront create-invalidation --distribution-id $ELARBEE_CLOUDFRONT_DISTRIBUTION --paths /*",
+    "sync": "aws s3 sync dist/elarbee s3://elarbee.io.2.0 --acl public-read --profile alex",
+    "deploy": "npm run build; npm run sync",
+    "deploy:invalidate": "npm run build; npm run sync; npm run invalidate"
   },
   "private": true,
   "dependencies": {
@@ -50,6 +54,7 @@
     "karma-jasmine": "~1.1.1",
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "^5.4.1",
+    "replace-in-file": "^3.4.2",
     "ts-node": "~5.0.1",
     "tslint": "~5.9.1",
     "typescript": "~2.9.2"
