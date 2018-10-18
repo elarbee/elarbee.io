@@ -5,14 +5,14 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build-prod": "npm version patch && node ./replace.build.js && ng build --prod",
+    "build:prod": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "invalidate": "aws cloudfront create-invalidation --distribution-id $ELARBEE_CLOUDFRONT_DISTRIBUTION --paths /*",
     "sync": "aws s3 sync dist/elarbee s3://elarbee.io.2.0 --acl public-read --profile alex",
-    "deploy": "npm run build; npm run sync",
-    "deploy:invalidate": "npm run build; npm run sync; npm run invalidate"
+    "deploy": "npm run build:prod; npm run sync",
+    "deploy:invalidate": "npm run build:prod; npm run sync; npm run invalidate"
   },
   "private": true,
   "dependencies": {
